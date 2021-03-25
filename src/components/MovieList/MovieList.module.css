@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.listItem {
+  margin: 10px;
+  width: 100px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+.listLink {
+  text-decoration: none;
+  color: rgb(78, 78, 78);
+}

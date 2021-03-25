@@ -1,0 +1,31 @@
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgba(0, 0, 245, 0.178);
+}
+header {
+  border-bottom: ridge rgb(0, 0, 245);
+  background-color: rgba(0, 0, 245, 0.452);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+nav > ul {
+  display: flex;
+  margin: 0;
+  padding: 20px;
+}
+nav > ul > li {
+  margin: 5px;
+}
+ul {
+  list-style-type: none;
+}
+.NavLink {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.NavLinkActive {
+  text-decoration: none;
+  color: red;
+  font-size: 28px;
+}
