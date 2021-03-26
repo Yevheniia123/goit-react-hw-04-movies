@@ -38,7 +38,7 @@ class MovieDetailsPage extends Component {
             if (location.state && location.state.from) {
               return history.push(location.state.from);
             }
-            history.push(routes.movies);
+            history.push(routes.home);
           }}
         >
           Go back
@@ -72,7 +72,7 @@ class MovieDetailsPage extends Component {
             className={s.link}
             to={{
               pathname: `${url}/cast`,
-              state: { from: location },
+              state: { from: location.state.from } || { from: location },
             }}
           >
             Cast
@@ -82,7 +82,7 @@ class MovieDetailsPage extends Component {
             className={s.link}
             to={{
               pathname: `${url}/reviews`,
-              state: { from: location },
+              state: { from: location.state.from } || { from: location },
             }}
           >
             Reviews
